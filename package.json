@@ -4,7 +4,8 @@
   "description": "This is a school project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -a localhost -p 9000 -o -c-1"
   },
   "keywords": [],
   "author": "Anurag Sharma",
@@ -13,8 +14,10 @@
     "lodash": "^4.17.4"
   },
   "devDependencies": {
+    "http-server": "^0.10.0",
     "jshint": "^2.9.5",
-    "karma": "^2.0.0"
+    "karma": "^2.0.0",
+    "live-server": "^1.2.0"
   },
   "repository": {
     "type": "git",
