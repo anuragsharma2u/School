@@ -1,0 +1,23 @@
+{
+  "name": "school",
+  "version": "1.0.0",
+  "description": "This is a school project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Anurag Sharma",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.5",
+    "karma": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "k"
+  }
+}
