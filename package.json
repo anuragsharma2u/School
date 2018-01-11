@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server --port=9000 --host=localhost --browser=chrome -V"
+    "prestart": "node  buildScripts/log.js",
+    "start": "npm-run-all --parallel security-check open:src share",
+    "open:src" : "nodemon buildscripts/srcServer.js",
+    "security-check": "nsp check",
+    "localtunnel":"lt --port 9000",
+    "share": "npm-run-all --parallel open:src localtunnel"
   },
   "keywords": [],
   "author": "Anurag Sharma",
@@ -14,10 +19,17 @@
     "lodash": "^4.17.4"
   },
   "devDependencies": {
+    "chalk": "^2.3.0",
+    "express": "^4.16.2",
+    "express-livereload": "0.0.24",
     "http-server": "^0.10.0",
     "jshint": "^2.9.5",
     "karma": "^2.0.0",
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.0",
+    "localtunnel": "^1.8.3",
+    "nodemon": "^1.14.8",
+    "npm-run-all": "^4.1.2",
+    "open": "0.0.5"
   },
   "repository": {
     "type": "git",

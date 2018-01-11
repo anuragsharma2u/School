@@ -1,1 +1,13 @@
+# log
+logs
+*.log
+npm-debug.log
+
+# coverage directory usered by tools like Istanbul
+coverage
+
+# nyc test coverage
+
 node_modules/
+
+package-lock.json
